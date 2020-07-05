@@ -16,7 +16,7 @@ COPY --from=build /api .
 ENV ASPNETCORE_URLS=https://+:443;http://+:80
 ENV ASPNETCORE_HTTPS_PORT=443
 ENV ASPNETCORE_Kestrel__Certificates__Development__Password=luckystrike
-ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/https/TacTicApi.pfx
+ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/home/ubuntu/.aspnet/https/TacTicApi.pfx
 ##
 
 ENV ASPNETCORE_ENVIRONMENT docker
