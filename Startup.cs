@@ -41,6 +41,8 @@ namespace TacTicApi
                             "https://localhost:5001",
                             "https://www.atlassian.net",
                             "https://*.atlassian.net",
+                            "https://tacticaddon.herokuapp.com",
+                            "https://2f4956d8846b.ngrok.io",
                             "https://tactica.xyz",
                             "https://tacticapi-87817175.us-east-1.elb.amazonaws.com")
                                 .AllowAnyHeader()
