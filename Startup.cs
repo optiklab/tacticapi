@@ -38,7 +38,7 @@ namespace TacTicApi
                             "https://www.atlassian.com",
                             "https://*.atlassian.com",
                             "https://atlassian.net",
-                            //"https://localhost:4431",
+                            "https://localhost:5001",
                             "https://www.atlassian.net",
                             "https://*.atlassian.net")
                                 .AllowAnyHeader()
