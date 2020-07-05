@@ -81,13 +81,14 @@ namespace TacTicApi.Controllers
             return Ok(cityFound);
         }
 
-        // Request: https://localhost:5001/Cities/GetCityByIp/178.76.221.84
+        // Request: https://localhost:5001/Cities/GetCityByIp/178_76_221_84
         // Response: {"woeid":null,"country":"RU","cityName":"Taganrog","long":"38.8969","lat":"47.2362","gmtOffset":0}
         [HttpGet("{action}/{ipAddress}")]
         public async Task<IActionResult> GetCityByIp(string ipAddress)
         {
             City cityFound = null;
             var client = _clientFactory.CreateClient();
+            ipAddress = ipAddress.Replace("_", ".");
             using(var ipInfoResponse = await client.GetAsync("https://api.ipinfodb.com/v3/ip-city/?key=debfc7c448e8b9d818084949fa23db2382f2488fbfd52e805a3e059091c65d8b&ip=" + ipAddress + "&format=json"))
             {
                 if (!ipInfoResponse.IsSuccessStatusCode)
