@@ -40,7 +40,9 @@ namespace TacTicApi
                             "https://atlassian.net",
                             "https://localhost:5001",
                             "https://www.atlassian.net",
-                            "https://*.atlassian.net")
+                            "https://*.atlassian.net",
+                            "https://tactica.xyz",
+                            "https://tacticapi-87817175.us-east-1.elb.amazonaws.com")
                                 .AllowAnyHeader()
                                 .AllowAnyMethod();
                     });
