@@ -16,6 +16,8 @@ namespace TacTicApi
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "AtlassianPolicy";
+    
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,6 +29,17 @@ namespace TacTicApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpClient();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("https://atlassian.com",
+                            "https://www.atlassian.com",
+                            "https://*.atlassian.com")
+                                .WithMethods("GET");
+                    });
+            });
             services.AddMemoryCache();
             services.AddControllers();
         }
@@ -42,12 +55,13 @@ namespace TacTicApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers().RequireCors(MyAllowSpecificOrigins);
             });
         }
     }
