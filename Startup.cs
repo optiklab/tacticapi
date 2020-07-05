@@ -38,9 +38,11 @@ namespace TacTicApi
                             "https://www.atlassian.com",
                             "https://*.atlassian.com",
                             "https://atlassian.net",
+                            //"https://localhost:4431",
                             "https://www.atlassian.net",
                             "https://*.atlassian.net")
-                                .WithMethods("GET");
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
                     });
             });
             services.AddMemoryCache();
@@ -64,7 +66,7 @@ namespace TacTicApi
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers().RequireCors(MyAllowSpecificOrigins);
+                endpoints.MapControllers();//.RequireCors(MyAllowSpecificOrigins);
             });
         }
     }
