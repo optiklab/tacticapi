@@ -35,7 +35,6 @@ namespace TacTicApi
                     builder =>
                     {
                         builder
-                            .AllowCredentials()
                             .AllowAnyOrigin()
                             .AllowAnyHeader()
                             .AllowAnyMethod();
