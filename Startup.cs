@@ -36,7 +36,10 @@ namespace TacTicApi
                     {
                         builder.WithOrigins("https://atlassian.com",
                             "https://www.atlassian.com",
-                            "https://*.atlassian.com")
+                            "https://*.atlassian.com",
+                            "https://atlassian.net",
+                            "https://www.atlassian.net",
+                            "https://*.atlassian.net")
                                 .WithMethods("GET");
                     });
             });
