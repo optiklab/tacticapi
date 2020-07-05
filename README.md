@@ -2,7 +2,7 @@
 
 ## Assign tickets with confidence about the progress.
 
-This JIRA addon allows teams distributed over the world to be more efficient by making work timelines of every JIRA issue more transparent to all colleagues. It uses current and historical information available in JIRA to predict when the assigned person most likely can start work on the subject. 
+This is a back-end part of the [TacTicA JIRA addon](https://github.com/tacticaxyz/tacticaddon) that allows teams distributed over the world to be more efficient by making work timelines of every JIRA issue more transparent to all colleagues. It uses current and historical information available in JIRA to predict when the assigned person most likely can start work on the subject. 
 
 ## Prioritize work based on knowledge instead of guesses.
 
@@ -11,8 +11,8 @@ It doesn’t replace direct communication, but it fits distributed teams where i
 
 ## Technologies used
 
-* Front-End part (actual JIRA add-on) is built with native JavaScript and using Atlassian Connect add-on library [atlassian-connect-express](https://bitbucket.org/atlassian/atlassian-connect-express/src/master/README.md#markdown-header-atlassian-connect-express-nodejs-package-for-express-based-atlassian-add-ons).
-* Back-end API is built with .NET Core 3.1, C#, Docker and AWS platform (ECS, Fargate, EC2, Route53 etc.).
+* [Front-End part](https://github.com/tacticaxyz/tacticaddon) is built with native JavaScript and using Atlassian Connect add-on library [atlassian-connect-express](https://bitbucket.org/atlassian/atlassian-connect-express/src/master/README.md#markdown-header-atlassian-connect-express-nodejs-package-for-express-based-atlassian-add-ons).
+* This Back-end API is built with .NET Core 3.1, C#, Docker and AWS platform (ECS, Fargate, EC2, Route53 etc.).
 * External API's used:
  * [GeoNames API](http://api.geonames.org/) for geocoding and timezones
  * [IpInfoDb](https://ipinfodb.com) service for finding IP address of the client
