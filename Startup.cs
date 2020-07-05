@@ -34,7 +34,12 @@ namespace TacTicApi
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                     builder =>
                     {
-                        builder.WithOrigins("https://atlassian.com",
+                        builder
+                            .AllowCredentials()
+                            .AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                       /* builder.WithOrigins("https://atlassian.com",
                             "https://www.atlassian.com",
                             "https://*.atlassian.com",
                             "https://atlassian.net",
@@ -46,7 +51,7 @@ namespace TacTicApi
                             "https://tactica.xyz",
                             "https://tacticapi-87817175.us-east-1.elb.amazonaws.com")
                                 .AllowAnyHeader()
-                                .AllowAnyMethod();
+                                .AllowAnyMethod();*/
                     });
             });
             services.AddMemoryCache();
