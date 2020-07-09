@@ -43,6 +43,27 @@ Try some straightforward use cases:
 
 3. If you assign a ticket to a person that is under load (having work that is in progress) or too far from you, then JIRA addon will show a higher risk status for urgent tasks.
 
+## Building pre-requisites
+
+Make sure you have installed:
+1. .NET Core 3.1
+2. Docker
+3. Make sure you have ports 80 and 443 free. Otherwise, you need to change this in Dockerfile of the source codes.
+
+## Building instructions
+
+1. Copy-paste source code to your server and locate the folder with source code
+2. Execute commands one by one (example for Linux):
+$> sudo dotnet build
+$> sudo docker build -t tacticapi .
+$> sudo docker run -p 80:80 tacticapi
+3. Test execution with:
+$> sudo curl http://localhost/cities/getcityinfo/taganrog
+
+It should return you JSON content with information about the Taganrog city. If it's happened - now your API is up and running.
+
+To be able to run your API in the public internet you need to make sure that HTTP(S) is turned on for your API. One option is to install this API using EC2 machine running on AWS and make a Load Balancer to take care about HTTP(S) and certificates.
+
 ## Technologies used
 
 * AWS Cloud
