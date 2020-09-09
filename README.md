@@ -1,4 +1,4 @@
-# TacTicA JIRA addon
+# TacTicA JIRA addon API
 
 ## Problem
 
