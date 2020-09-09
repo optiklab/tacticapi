@@ -85,5 +85,4 @@ To be able to run your API in the public internet you need to make sure that HTT
 
 ## Follow
 
-Source code is available on [TacTicA github](https://github.com/tacticaxyz)
-Author's other projects and personal page can be found here [Anton Yarkov](https://optiklab.github.io/)
+Source code is available on TacTicA GitHub repos for [Front-End](https://github.com/optiklab/tacticaddon) and [Back-End](https://github.com/optiklab/tacticapi).
