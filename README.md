@@ -1,4 +1,4 @@
-# TacTicA JIRA addon API
+# Tactic Assignments (TacTicA) JIRA addon Back-End API
 
 ## Problem
 
