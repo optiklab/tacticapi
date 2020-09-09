@@ -69,7 +69,7 @@ To be able to run your API in the public internet you need to make sure that HTT
 * AWS Cloud
 * Heroku Cloud
 * Docker containers
-* [Front-End part](https://github.com/tacticaxyz/tacticaddon) is built with native JavaScript and using Atlassian Connect add-on library [atlassian-connect-express](https://bitbucket.org/atlassian/atlassian-connect-express/src/master/README.md#markdown-header-atlassian-connect-express-nodejs-package-for-express-based-atlassian-add-ons).
+* [Front-End part](https://github.com/optiklab/tacticaddon) is built with native JavaScript and using Atlassian Connect add-on library [atlassian-connect-express](https://bitbucket.org/atlassian/atlassian-connect-express/src/master/README.md#markdown-header-atlassian-connect-express-nodejs-package-for-express-based-atlassian-add-ons).
 * This Back-end API is built with .NET Core 3.1, C#, Docker and AWS platform (ECS, Fargate, EC2, Route53 etc.).
 * External API's used:
  * [GeoNames API](http://api.geonames.org/) for geocoding and timezones
