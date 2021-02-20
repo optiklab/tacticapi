@@ -54,11 +54,16 @@ Make sure you have installed:
 
 1. Copy-paste source code to your server and locate the folder with source code
 2. Execute commands one by one (example for Linux):
+```bash
 $> sudo dotnet build
 $> sudo docker build -t tacticapi .
 $> sudo docker run -p 80:80 tacticapi
+```
+
 3. Test execution with:
+```bash
 $> sudo curl http://localhost/cities/getcityinfo/taganrog
+```
 
 It should return you JSON content with information about the Taganrog city. If it's happened - now your API is up and running.
 

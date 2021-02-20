@@ -19,7 +19,7 @@
     "TacTicApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://+:443;http://+:80",
+      "applicationUrl": "https://+:4431;http://+:801",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -29,7 +29,7 @@
       "launchBrowser": true,
       "applicationUrl": "http://+:80",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "docker"
       }
     }
   }
