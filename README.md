@@ -22,6 +22,12 @@ It all starts with knowing the ticket number and assignee. Then this tool will a
 It will also check the amount of work in progress for this person to consider his current load.
 It will ensure that the item you have just assigned to a colleague has the best potential to be executed soon. Otherwise, it will raise a red status to let you know about the risks!
 
+![1](https://optiklab.github.io/img/tactica.png)
+
+![2](https://optiklab.github.io/img/tactica1.png)
+
+![3](https://optiklab.github.io/img/tactica2.png)
+
 ## How to try
 
 1. Go to your Atlassian JIRA Project > select Apps > select Upload App 
